@@ -1,22 +1,22 @@
 # Todo List
 
-### Run with docker
+### ejecutar con docker
 
-Requires
+requisitos
 
 -   [Docker](https://docs.docker.com/get-docker/)
 -   [Docker compose](https://docs.docker.com/compose/install/)
 
-Run the following command to start database, backend and frontend
+corriendo estos comandos se levantara la base el front y el back
 
 ```
 docker-compose up -d
 ```
 
-ASP.NET API will be available in `http://localhost:5000`
-ReactJS app will be available in `http://localhost:3000`
+ASP.NET API se ejecutara en  `http://localhost:5000`
+ReactJS app se ejecutara en  `http://localhost:3000`
 
-To stop the application run
+detener la aplicacion
 
 ```
 docker-compose down
@@ -24,7 +24,7 @@ docker-compose down
 
 ### ejecutar el proyecto sin docker
 
-Requires
+Pasos
 
 En la carpeta del proyecto ubicarse en el Path del back y ejecutar 
 
@@ -32,7 +32,7 @@ En la carpeta del proyecto ubicarse en el Path del back y ejecutar
 $ dotnet restore
 ```
 
-To run the tests
+Correr los test
 
 ```
 $ dotnet test
@@ -66,7 +66,7 @@ levantar el proyecto
 $ dotnet run --project src/TodoList.WebApi
 ```
 
-**Run the React app**
+**correr el frontend**
 
 modificar el archivo env que es ta en  ./src/todo-list-spa con la url de la api:
 
